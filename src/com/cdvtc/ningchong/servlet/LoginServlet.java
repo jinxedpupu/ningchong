@@ -29,13 +29,11 @@ public class LoginServlet extends HttpServlet {
             //成功//通过request获取session// 将信息保存在Session中（向其它页面共享数据）
             HttpSession session = request.getSession();
             session.setAttribute("user", user);
-            response.sendRedirect("homepage.jsp");
-            // 重置页面（前转）：首面
+            response.sendRedirect("index.jsp");// 重置页面（前转）：首面
         } else {
             //失败
             request.setAttribute("error", "账户或密码错误！");
-            request.getRequestDispatcher("login_user.jsp").forward(request, response);
-            // 前面页面：登陆页面
+            request.getRequestDispatcher("login_user.jsp").forward(request, response);// 前面页面：登陆页面
         }
     }
 

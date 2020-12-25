@@ -68,6 +68,9 @@
         a.dsf-wx{
             margin-left: 130px;
         }
+        .error{
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -78,14 +81,14 @@
         <form class="input" action="RegisterServlet" method=post>
             <input class="password" type="text" name="userzhanghao" placeholder="请输入用户账号" size="30">
             <% if(request.getAttribute("error_userzh") != null) {%>
-            <span class="error"> <%=request.getAttribute("error_userzh")%> </span>
+            <p class="error"> <%=request.getAttribute("error_userzh")%> </p>
             <%}%>
 
             <input class="password" type="password" name="userpassword" placeholder="请输入用户密码" size="30">
 
             <input class="password" type="text" name="userdianhua" placeholder="请输入用户电话" size="30">
             <% if(request.getAttribute("error_userdh") != null) {%>
-            <span class="error"> <%=request.getAttribute("error_userdh")%> </span>
+            <p class="error"> <%=request.getAttribute("error_userdh")%> </p>
             <%}%>
 
             <input class="password" type="text" name="userdizhi" placeholder="请输入用户地址" size="30">

@@ -71,6 +71,18 @@ public class NingchongDaoimpl implements NingchongDao{
 
     @Override
     public void adduseryue(User user) {
+        try {
+            // 获取连接
+            Connection con = db.getConnection();
 
+            // 执行SQL语句 例：update student set Enter_score=Enter_score+20;
+            PreparedStatement pst = con.prepareStatement("update user set useryue=useryue +'"+user.getUseryue()+"' where userzhanghao = '"+user.getUserzhanghao()+"'");
+//            pst.setInt(1, user.getUseryue());
+
+            pst.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

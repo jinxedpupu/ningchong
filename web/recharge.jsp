@@ -38,6 +38,9 @@
             background-color: #00BFFF;
             border: #00BFFF;
         }
+        .error{
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -59,6 +62,9 @@
             <input id="useryue" type="text" name="useryue" placeholder="请输入充值金额" pattern="^\+?[1-9][0-9]*$">
             <input id="btn" type=submit name="btn" value="确定充值" onclick="btn()" />
         </form>
+        <% if(request.getAttribute("error_useryue") != null) {%>
+        <p class="error"> <%=request.getAttribute("error_useryue")%> </p>
+        <%}%>
     </div>
 </div>
 </body>

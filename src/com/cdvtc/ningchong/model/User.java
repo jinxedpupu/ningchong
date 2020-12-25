@@ -7,7 +7,6 @@ public class User {
     protected String userpassword;
     protected String userdianhua;
     protected String userdizhi;
-    //protected String useryue;
     protected int useryue;
 
     public int getUserid() {
