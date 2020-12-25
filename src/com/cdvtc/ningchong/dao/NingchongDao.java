@@ -15,5 +15,8 @@ public interface NingchongDao {
      */
     void addUser(User user);
 
-
+    /**
+     * 用户充值
+     */
+    void adduseryue(User user);
 }

@@ -9,8 +9,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-    <title>用户注册-挂神</title>
+    <title>宁宠狗狗-注册</title>
     <style type="text/css">
         .big-bg{
             width: 100%;

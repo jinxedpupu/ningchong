@@ -12,5 +12,6 @@
   </head>
   <body>
   --------------<a href="login_user.jsp">登录</a>
+  --------------<a href="recharge.jsp">充值</a>
   </body>
 </html>

@@ -68,4 +68,9 @@ public class NingchongDaoimpl implements NingchongDao{
             e.printStackTrace();
         }
     }
+
+    @Override
+    public void adduseryue(User user) {
+
+    }
 }
